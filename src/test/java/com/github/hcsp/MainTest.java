@@ -1,6 +1,7 @@
 package com.github.hcsp;
 
 import java.lang.reflect.Field;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -8,7 +9,7 @@ public class MainTest {
     @Test
     public void updateStaticVariableTest() throws Exception {
         Assertions.assertEquals(readStaticVariable().toLowerCase(), "hello");
-        Main.updateMessage();
+        Main.main(null);
         Assertions.assertEquals(readStaticVariable().toLowerCase(), "hi");
     }
 
