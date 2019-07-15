@@ -14,7 +14,7 @@ public class MainTest {
     }
 
     private String readStaticVariable() throws Exception {
-        Field field = Main.class.getField("message");
+        Field field = Main.class.getDeclaredField("message");
         field.setAccessible(true);
         return (String) field.get(null);
     }
