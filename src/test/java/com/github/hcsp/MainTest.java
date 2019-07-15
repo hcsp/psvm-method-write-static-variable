@@ -1,13 +1,20 @@
 package com.github.hcsp;
 
+import java.lang.reflect.Field;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class MainTest {
     @Test
-    public void updateStaticVariableTest() {
-        Assertions.assertEquals(Main.message.toLowerCase(), "hello");
+    public void updateStaticVariableTest() throws Exception {
+        Assertions.assertEquals(readStaticVariable().toLowerCase(), "hello");
         Main.updateMessage();
-        Assertions.assertEquals(Main.message.toLowerCase(), "hi");
+        Assertions.assertEquals(readStaticVariable().toLowerCase(), "hi");
+    }
+
+    private String readStaticVariable() throws Exception {
+        Field field = Main.class.getField("message");
+        field.setAccessible(true);
+        return (String) field.get(null);
     }
 }
