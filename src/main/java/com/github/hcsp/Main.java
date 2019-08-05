@@ -12,6 +12,5 @@ public class Main {
     public static void updateMessage() {
         // Modify the static variable "message" to "Hi"
         // 将静态成员变量"message"的值改成"Hi"
-        com.github.hcsp.Main.message = "Hi";
     }
 }
