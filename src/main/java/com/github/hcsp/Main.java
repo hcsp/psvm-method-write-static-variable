@@ -1,15 +1,15 @@
 package com.github.hcsp;
 
 public class Main {
-    public static String Hi = "Hello";
+    public static String message = "Hi";
 
     public static void main(String[] args) {
-        System.out.println(Hi);
-        updateHi();
-        System.out.println(Hi);
+        System.out.println(message);
+        updatemessage();
+        System.out.println(message);
     }
 
-    public static void updateHi() {
+    private static void updatemessage() {
         // Modify the static variable "message" to "Hi"
         // 将静态成员变量"message"的值改成"Hi"
     }
