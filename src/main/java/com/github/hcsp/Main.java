@@ -1,10 +1,11 @@
 package com.github.hcsp;
 
 public class Main {
-    public static String message = "Hi";
+    public static String message = "Hello";
 
     public static void main(String[] args) {
         System.out.println(message);
+        message = "Hi";
         updateMessage();
         System.out.println(message);
     }
