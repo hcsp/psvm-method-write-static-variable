@@ -1,7 +1,7 @@
 package com.github.hcsp;
 
 public class Main {
-    public static String message = "Hhh";
+    public static String message = "Hi";
 
     public static void main(String[] args) {
         System.out.println(message);
