@@ -1,12 +1,12 @@
 package com.github.hcsp;
 
 public class Main {
-    public static String Hi = "Hello";
+    public static String message = "Hi";
 
     public static void main(String[] args) {
-        System.out.println(Hi);
+        System.out.println(message);
         updateMessage();
-        System.out.println(Hi);
+        System.out.println(message);
     }
 
     public static void updateMessage() {
