@@ -1,5 +1,8 @@
 package com.github.hcsp;
 
+import java.awt.event.HierarchyBoundsAdapter;
+import java.security.MessageDigest;
+
 public class Main {
     public static String message = "Hello";
 
@@ -12,5 +15,6 @@ public class Main {
     public static void updateMessage() {
         // Modify the static variable "message" to "Hi"
         // 将静态成员变量"message"的值改成"Hi"
+        message="Hi";
     }
 }
