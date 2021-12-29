@@ -1,7 +1,7 @@
 package com.github.hcsp;
 
 public class Main {
-    public static String message = "Message";
+    public static String message = "Hello";
 
     public static void main(String[] args) {
         System.out.println(message);
@@ -9,9 +9,9 @@ public class Main {
         System.out.println(message);
     }
 
-      public static void updateMessage() {
+    public static void updateMessage() {
         // Modify the static variable "message" to "Hi"
         // 将静态成员变量"message"的值改成"Hi"
-          message = "Hi";
+        message = "Hi";
     }
 }
