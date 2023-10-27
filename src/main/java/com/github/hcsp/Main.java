@@ -9,7 +9,9 @@ public class Main {
         System.out.println(message);
     }
 
-    public static void updateMessage() {
+    public static String updateMessage() {
+        message="Hi";
+        return message;
         // Modify the static variable "message" to "Hi"
         // 将静态成员变量"message"的值改成"Hi"
     }
